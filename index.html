@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Barbershop</title>
+</head>
+
+
+
+<body>
+
+  <!-- ---------HEADER------------->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <nav class="main-navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item"><a href="#" class="navigation-link">Про нас</a></li>
+            <li class="navigation-item"><a href="catalog.html" class="navigation-link">Каталог</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Поширені запитання</a></li>
+          </ul>
+        </nav>
+
+
+        <ul class="user-navigation">
+          <li class="user-item">
+            <a href="#" class="user-link"><img class="icons" src="icons/Search.svg" alt="user search"></a>
+
+          </li>
+          <li class="user-item">
+            <a href="#" class="user-link user-basket-button"><img class="icons" src="icons/Union.svg" alt="user basket"></a>
+
+          </li>
+          <li class="user-item">
+            <a href="#popup" class="user-link enter"><img class="icons icons-enter" src="icons/login.svg"
+                alt="user enter"></a>
+
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+    <!-- ------POPUPS--------------- -->
+
+    <!-- ---BASKET--POPUP----------- -->
+    <div class="popup-basket">
+      <div class="popup-basket-body">
+        <div class="popup-basket-content">
+          <h2 class="popup-basket-title">Корзина</h2>
+          <ul class="popup-basket-list">
+
+            <li class="popup-basket-list-item">
+              <div class="popup-basket-services-block">
+                <p class="popup-basket-list-services">Стрижка машинкой</p>
+                <p class="popup-basket-list-services-price">800 ₽</p>
+              </div>
+              <img class="popup-basket-icons" src="icons/basket-icons.png">
+            </li>
+            
+            <li class="popup-basket-list-item">
+              <div class="popup-basket-services-block">
+                <p class="popup-basket-list-services">Стрижка усов</p>
+                <p class="popup-basket-list-services-price">1200 ₽</p>
+              </div>
+              <img class="popup-basket-icons" src="icons/basket-icons.png">
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- ----USER--ENTER--POPUP---------- -->
+
+    <div id="popup" class="popup">
+      <div class="popup_body">
+        <div class="popup-content">
+          <a class="popup-close" href="#">X</a>
+          <h2 class="popup-title">Личный кабинет</h2>
+          <form class="popup-form" action="">
+            <input class="popup-input-login" type="text" placeholder="Логин">
+            <input class="popup-input-password" type="password" placeholder="Пароль">
+            <div class="popup-forgot-password-block">
+              <label for=""><input class="popup-checkbox" type="checkbox" name="" id="">Запомнить меня</label>
+              <a class="forgot-password-link" href="#">Забыл пароль</a>
+
+            </div>
+            <a href="#" class="popup-button">войти</a>
+            <a href="#" class="popup-button-registration">Регистрация</a>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- --------MAIN------------>
+
+  <div class="container">
+    <section class="advantages-block">
+      <!-- <img class="main-bg" src="images/main-background.jpg" alt=""> -->
+      <div class="advantages-cards-block">
+
+        <div class="card">
+          <h2 class="card-title">Швидко</h2>
+          <img class="card-rectangle" src="icons/Rectangle 5.svg" alt="rectangle icon">
+          <p class="card-info">Ми робимо свою роботу швидко! Дві години минуть непомітно, і ви щасливий власник
+            стильної зачіски "хвилинка"!</p>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Круто</h2>
+          <img class="card-rectangle" src="icons/Rectangle 5.svg" alt="rectangle icon">
+          <p class="card-info">Забудьте, як ви стриглись раніше.Ми зробимо з вас
+            зірку футболу чи<br> кіно! <br>У всякому разі зовнішньо.</p>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Дорого</h2>
+          <img class="card-rectangle" src="icons/Rectangle 5.svg" alt="rectangle icon">
+          <p class="card-info">Наші майстри — професіонали своєї справи і не можуть
+            коштувати дешнво. до того ж, хіба ціна не надає особливий статус?!</p>
+        </div>
+
+      </div>
+
+
+
+    </section>
+  </div>
+  <!---------SERVICES--SECTION---------->
+  <div class="container">
+
+    <section class="services">
+      <div class="popular-services">
+        <h2 class="popular-services-title title">Поширені послуги</h2>
+        <ul class="services-list">
+          <li class="services-item">Стрижка машинкой<b class="services-price">800 ₽</b></li>
+          <li class="services-item">Стрижка усов<b class="services-price">1200 ₽</b></li>
+          <li class="services-item">Груминг<b class="services-price">400 ₽</b></li>
+          <li class="services-item">Комплексная стрижка<b class="services-price">2300 ₽</b></li>
+          <li class="services-button-item">
+            <a href="#" class="services-button">Посмотреть все</a>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+      <div class="fotogallery">
+        <h2 class="gallery-title title">Фотогалерея</h2>
+        <div class="gallery-slider-wrapper">
+          <img src="images/gallery main.jpg" alt="" class="gallery-item">
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+  <!-----SECTION--CONTACTS-AND-FORM---------->
+
+
+  <section class="contacts-section">
+    <div class="container ">
+      <div class="contacts-block">
+        <h2 class="contacts-title">Контакты</h2>
+        <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
+        <p class="contacts-info">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="contacts-phone">+7 800 555-86-28</p>
+        <h3 class="contacts-time">Время работы</h3>
+        <p class="contacts-calendar">пн—пт: с 10:00 до 22:00</p>
+        <p class="contacts-calendar">сб—вс: с 10:00 до 19:00</p>
+
+        <button class="contacts-button road-button">Как проехать</button>
+        <button class="contacts-button callback-button">Обратная связь</button>
+      </div>
+
+      <!-- -----FORM------------- -->
+
+      <div class="form">
+        <h2 class="form-title">Записаться</h2>
+        <p class="form-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+
+        <form action="form">
+          <div class="data-block">
+            <div class="data-label-block">
+              <label>Дата</label>
+              <input class="data-input" type="data" placeholder="01.01.2020" name="firstname">
+            </div>
+            <div class="data-label-block"><label>Время</label>
+              <input class="time-input" type="text" placeholder="10:10">
+            </div>
+            <div class="data-label-block"><label>Телефон</label>
+              <input class="phone-input" type="phone" placeholder="+3 800 000-00-00">
+            </div>
+          </div>
+
+          <div class="name-label-block"><label>Ваше имя</label>
+            <input class="name-input" type="text" name="firstname">
+          </div>
+
+          <button class="form-button">Записаться</button>
+
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ---------FOOTER------------------ -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-inner">
+
+        <div class="logo-block">
+          <a href="#" class="footer-logo"><img src="icons/footer-logo.png" alt=""></a>
+          <p class="logo-info">Санкт-Петербург, набережная
+            реки Карповки, 5, литера П.</p>
+          <p class="logo-phone">+7 800 555-86-28</p>
+          <a href="" class="logo-link">Как нас найти?</a>
+        </div>
+
+        <div class="search-block">
+          <h2 class="search-title">Получайте лучшие предложения</h2>
+          <div class="search-input-block">
+            <input class="search-field" type="text" placeholder="question@htmlacademy.ru">
+            <img class="search-right" src="icons/stroke right.png" alt="icon stroke right">
+          </div>
+
+        </div>
+
+        <div class="friendship-block">
+          <h2 class="friendship-title">Давайте дружить</h2>
+          <div class="social-block">
+            <img class="social-icons" src="icons/twitter.svg" alt="">
+            <img class="social-icons" src="icons/Vector.svg" alt="">
+            <img class="social-icons" src="icons/Union3.svg" alt="">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
