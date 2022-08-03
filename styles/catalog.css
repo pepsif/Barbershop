@@ -1,0 +1,497 @@
+.navigation-item {
+  position: relative;
+}
+
+.current-page {
+  /*   background-color:red; */
+}
+
+.current-page:after {
+  content: '';
+  display: block;
+  width: 54px;
+  height: 4px;
+  bottom: 0px;
+  background-color: white;
+  position: absolute;
+}
+
+.catalog-logo {
+  /*   color:white; */
+}
+
+.catalog-main {
+  background: url('../images/services-ornament.png');
+}
+
+.catalog-title {
+  padding: 40px 0 16px 0;
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  text-transform: uppercase;
+  /* basic-extra-dark */
+  color: #242424;
+}
+
+/* ---BREADCRUMBS-BLOCK---------- */
+.breadcrumbs-block {
+  padding: 0 0 32px 0;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  /*   align-items:flex-end; */
+}
+
+.breadcrumbs-item {
+  margin-right: 32px;
+  position: relative;
+}
+
+.breadcrumbs-link {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #242424;
+  text-decoration-line: underline;
+}
+
+.breadcrumbs-item:first-child a::after {
+  content: '';
+  background-image: url('../icons/pagination rectangle.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 35%;
+  left: 120%;
+  padding: 50px;
+  /*   transform:translateY(-50%); */
+}
+
+.breadcrumbs-item:last-child a {
+  text-decoration: none;
+  /*   color:red; */
+}
+
+.breadcrumbs-icon {
+}
+
+/* ----CATALOG-AND-FILTERS--BlOCK--- */
+.filters-catalog-block {
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+/* ---LEFT_SIDE_BLOCK---------- */
+.left-side-block {
+  margin-right: 20px;
+}
+
+/* ---RIGHT_SIDE_BLOCK---------- */
+.right-side-block {
+}
+
+/* ----PRICE_FORM---------- */
+.price-form {
+  width: 200px;
+}
+
+.price-block {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.price-input-block {
+  /*   display:none; */
+}
+
+.price-title {
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.price-input {
+  cursor: pointer;
+}
+
+.price-range-block {
+  text-align: center;
+}
+
+/* ----CATALOG-CHECKBOX_---- */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid black;
+  /*   border-radius: 0.25em; */
+  margin-right: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*   background-size: 50% 50%; */
+}
+
+.custom-checkbox:checked+label::before {
+  /*   border-color: #0b76ef; */
+  /*   background-color: #0b76ef; */
+  background-image: url("../icons/close.png");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #814B18;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  /*   background-color: #b3d7ff;
+  border-color: #b3d7ff; */
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  /*   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); */
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  /*   border-color: #80bdff; */
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  /*   background-color: #e9ecef; */
+}
+
+/*   ---RADIO-BUTTON-BLOCK----- */
+/* для элемента input c type="radio" */
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #4e2e0e;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active+label::before {
+/*   background-color: #b3d7ff; */
+/*   border-color: #b3d7ff; */
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus+label::before {
+  /*     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); */
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked)+label::before {
+  /*     border-color: #80bdff; */
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+/*   border-color: red; */
+/*   background-color: #0b76ef; */
+  background-image: url("../icons/dot.png");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled+label::before {
+/*   background-color: #e9ecef; */
+}
+
+/* ------------------ */
+.catalog-filter-title {
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-filter-group {
+  width: 200px;
+}
+
+.catalog-filter-title {
+}
+
+.checkbox-block {
+  display: flex;
+  color: black;
+  /*   align-items:flex-end; */
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.filters-checkbox {
+  margin-left: -10px;
+}
+
+.checkbox-block span {
+  margin: 0px 0px 16px 20px;
+  cursor: pointer;
+}
+
+.catalog-filter-title {
+}
+
+.radio-block {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+
+.radio-block span {
+  margin: 0px 0px 16px 18px;
+}
+
+.filters-checkbox {
+}
+
+/* ---BUTTON------------ */
+.filters-button {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  margin-top: 40px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 12px 18.5px;
+  cursor: pointer;
+}
+
+/* ------CATALOG_SORT--------- */
+.catalog-sort-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*   width: 700px; */
+  background-color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.catalog-select {
+  margin: 16px;
+  border: 2px solid black;
+  padding: 10px 93px 10px 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  /* line-height: 150%; */
+}
+
+.select-input {
+}
+
+.select-sort-block {
+  display: flex;
+  align-items: center;
+}
+
+.sort-icon-list {
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.sort-icon-cards {
+  padding: 14px 20px;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* ----CARDS--BLOCK-------- */
+.catalog-cards-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.catalog-card {
+  background-color: #FFFFFF;
+  width: 220px;
+  height: 401px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.catalog-card-image {
+  /*  margin:0px auto; */
+  width: 220px;
+  height: 168px;
+  margin: 16px 0;
+}
+
+.catalog-card-info {
+  /* background-color:white; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+  color: #000000;
+  padding: 16px 16px 0 16px;
+}
+
+.catalog-card-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  padding: 8px 0 0 16px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #814B18;
+}
+
+.catalog-buy-button {
+  /*   margin-top: 40px; */
+  background-color: black;
+  color: white;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  /*   margin: 16px; */
+  cursor: pointer;
+  padding: 12px 63px;
+  position: absolute;
+  bottom: 16px;
+  margin: 0 16px;
+}
+
+/* ----PAGINATION--BLOCK------ */
+.pagination-block {
+  background-color: white;
+  width: 700px;
+  height: 76px;
+  margin: 24px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.pagination-list {
+  display: flex;
+}
+
+.pagination-item {
+}
+
+.pagination-link {
+  padding: 12px 20px;
+  background-color: black;
+  color: white;
+  margin-right: 8px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-prev {
+  background-color: #595959;
+}
+
+.pagination-next {
+}
+
+.pagination-button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 14px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.current-pagination {
+  background-color: white;
+  color: black;
+}
+
+/* ---FOOTER--------------- */
+footer {
+  margin-top: 50px;
+}
