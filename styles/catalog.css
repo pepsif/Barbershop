@@ -158,8 +158,8 @@
 }
 
 .custom-checkbox:checked+label::before {
-  /*   border-color: #0b76ef; */
-  /*   background-color: #0b76ef; */
+/*     border-color: #0b76ef; */
+/*     background-color: #0b76ef; */
   background-image: url("../icons/close.png");
 }
 
@@ -245,7 +245,7 @@
 .custom-radio:checked+label::before {
 /*   border-color: red; */
 /*   background-color: #0b76ef; */
-  background-image: url("../icons/dot.png");
+  background-image: url("../icons/Ellipse.png");
 }
 
 /* стили для радиокнопки, находящейся в состоянии disabled */
