@@ -198,13 +198,17 @@ header {
 
 /* --------SERVICES-SECTION---------- */
 .services {
-  display: flex;
+/*   display: flex; */
   /*   background-color: #FBF7F4; */
   justify-content: space-between;
   margin-bottom: 41px;
-  background-image: url('../images/services-ornament.png');
+  
 }
-
+.services .container {
+  display:flex;
+  background-image: url('../images/services-ornament.png');
+  max-width:940px;
+}
 .popular-services {
   width: 420px;
   /*   background-color: #FBF7F4; */
