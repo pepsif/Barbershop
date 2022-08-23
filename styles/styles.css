@@ -7,15 +7,13 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  position:
-  relative;
+  position: relative;
 }
 
 .container {
   max-width: 940px;
   margin: 0 auto;
-/*   padding:0 20px; */
-  
+  /*   padding:0 20px; */
 }
 
 input {
@@ -49,7 +47,7 @@ header {
   /*     background-color: black; */
   justify-content: space-between;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 
 .main-navigation {
@@ -142,7 +140,6 @@ header {
   font-weight: 700;
   /* font-size: 16px; */
   line-height: 140%;
-  
 }
 
 /* -------MAIN--------------- */
@@ -198,17 +195,18 @@ header {
 
 /* --------SERVICES-SECTION---------- */
 .services {
-/*   display: flex; */
+  /*   display: flex; */
   /*   background-color: #FBF7F4; */
   justify-content: space-between;
   margin-bottom: 41px;
-  
 }
+
 .services .container {
-  display:flex;
+  display: flex;
   background-image: url('../images/services-ornament.png');
-  max-width:940px;
+  max-width: 940px;
 }
+
 .popular-services {
   width: 420px;
   /*   background-color: #FBF7F4; */
@@ -420,10 +418,11 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin-right: 16px;
-  cursor:pointer;
+  cursor: pointer;
 }
+
 .road-button:hover {
-  background-color:#814B18;
+  background-color: #814B18;
 }
 
 .callback-button {
@@ -436,9 +435,11 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
+
 .callback-button:hover {
-  background-color:#DBB590;
+  background-color: #DBB590;
 }
+
 /* -----FORM------------- */
 .form {
   background-image: url('../images/services-ornament.png');
@@ -555,12 +556,13 @@ header {
   text-transform: uppercase;
   margin: 0px 0 40px 0;
   padding: 10px 20px;
-  border:none;
+  border: none;
 }
+
 .form-button:hover {
-  background-color:#814B18;
-  
+  background-color: #814B18;
 }
+
 /* ------FOOTER------------ */
 footer {
   background-image: url('../images/footer-ornament.jpg');
@@ -645,7 +647,7 @@ footer {
   display: inline;
   padding: 14px;
   background-color: black;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .friendship-block {
@@ -673,89 +675,83 @@ footer {
   padding: 14px 20px;
   background-color: black;
   margin-right: 8px;
-  cursor:pointer;
+  cursor: pointer;
 }
-
 
 /* ------POPUP------------ */
-
 /* ---BASKET-------------- */
-
-
 .popup-basket {
- display:none;
-  position:absolute;
-  right:11.5%;
-  top:0;
+  display: none;
+  position: absolute;
+  right: 11.5%;
+  top: 0;
 }
-.popup-basket-body {
-  
-}
-.popup-basket-content {
-  background-color:white;
-   width:420px;
-  color:black;
-  
-}
-.popup-basket-title {
-  padding:40px 0 0 40px;
-  font-family: 'PT Sans Narrow';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 110%;
-/* or 35px */
 
-text-transform: uppercase;
+.popup-basket-body {
 }
+
+.popup-basket-content {
+  background-color: white;
+  width: 420px;
+  color: black;
+}
+
+.popup-basket-title {
+  padding: 40px 0 0 40px;
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  text-transform: uppercase;
+}
+
 .popup-basket-list {
-  
 }
+
 .popup-basket-list-item:last-child {
-  padding-bottom:40px;
-  
+  padding-bottom: 40px;
 }
+
 .popup-basket-list-item {
-  padding:24px 0 0 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
+  padding: 24px 0 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
 .popup-basket-services-block {
 }
+
 .popup-basket-list-services {
   font-family: 'PT Sans Narrow';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 140%;
-/* identical to box height, or 28px */
-
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+  text-transform: uppercase;
 }
+
 .popup-basket-list-services-price {
   font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 150%;
-/* identical to box height, or 24px */
-
-
-/* special-neutral */
-
-color: #AF7842;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* special-neutral */
+  color: #AF7842;
 }
+
 .popup-basket-icons {
-  background-color:black;
-  padding:14px 20px;
-  margin-right:41px;
+  background-color: black;
+  padding: 14px 20px;
+  margin-right: 41px;
 }
-
-
 
 /* -----USER-ENTER-SECTION------ */
-
 .popup {
   position: fixed;
   width: 100%;
@@ -763,16 +759,17 @@ color: #AF7842;
   background-color: rgba(106, 103, 103, 0.9);
   top: 0;
   left: 0;
-  opacity:0;
-  visibility:hidden;
-  transition:0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
 }
+
 .popup:target {
-  opacity:1;
-  visibility:visible;
-  z-index:1;
-  
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
 }
+
 .popup_body {
   min-height: 100%;
   display: flex;
@@ -780,72 +777,77 @@ color: #AF7842;
   justify-content: center;
   padding: 30px 10px;
 }
+
 .popup-content {
-  background-color:white;
-  color:black;
-  width:440px;
-  height:403px;
-  position:relative;
-/*   display:flex;
+  background-color: white;
+  color: black;
+  width: 440px;
+  height: 403px;
+  position: relative;
+  /*   display:flex;
   flex-wrap:wrap; */
-  
 }
+
 .popup-close {
-  position:absolute;
-  right:22px;
-  top:12px;
-  color:black;
-  text-decoration:none;
+  position: absolute;
+  right: 22px;
+  top: 12px;
+  color: black;
+  text-decoration: none;
 }
+
 .popup-title {
-  margin:40px 0 24px 40px;
+  margin: 40px 0 24px 40px;
   font-family: 'PT Sans Narrow';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 110%;
-/* or 35px */
-
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  text-transform: uppercase;
 }
+
 .popup-text {
-  
 }
-/* ----POPUP-FORM-------- */
 
+/* ----POPUP-FORM-------- */
 .popup-form {
 }
 
 .popup-input-login {
-  width:360px;
-  margin:0 0 16px 40px;
+  width: 360px;
+  margin: 0 0 16px 40px;
 }
+
 .popup-input-password {
-  width:360px;
-  margin:0 0 16px 40px;
+  width: 360px;
+  margin: 0 0 16px 40px;
 }
+
 .popup-forgot-password-block {
   font-family: 'PT Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-  padding:0 40px;
-  margin-bottom:20px;
-  display:flex;
-  justify-content:space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-.popup-checkbox {
-  margin-right:18px;
-}
-.forgot-password-link {
-/*   text-decoration:none; */
-  color:black;
-}
-.popup-button {
 
-color: #FFFFFF;
-   background-color: black;
+.popup-checkbox {
+  margin-right: 18px;
+}
+
+.forgot-password-link {
+  /*   text-decoration:none; */
+  color: black;
+}
+
+.popup-button {
+  color: #FFFFFF;
+  background-color: black;
   color: white;
   font-family: 'PT Sans';
   font-style: normal;
@@ -854,19 +856,20 @@ color: #FFFFFF;
   line-height: 100%;
   text-align: center;
   text-transform: uppercase;
-  width:360px;
-    padding: 14px 40px;
-  text-decoration:none;
-  margin-left:40px;
-  display:block;
+  width: 360px;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin-left: 40px;
+  display: block;
 }
+
 .popup-button:hover {
-  background-color:#814B18;
+  background-color: #814B18;
 }
+
 .popup-button-registration {
   color: black;
-/*    background-color: black; */
-  
+  /*    background-color: black; */
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -875,12 +878,34 @@ color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
   margin-right: 16px;
-    padding: 14px 40px;
-  text-decoration:none;
-  margin:16px 0 0 40px;
-  display:block;
-  width:360px;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin: 16px 0 0 40px;
+  display: block;
+  width: 360px;
 }
+
 .popup-button-registration:hover {
-  background-color:#DBB590;
+  background-color: #DBB590;
+}
+
+/* -----ADAPTIVE---------- */
+
+@media screen and (max-width:635px) {
+  .services .container {
+    width:640px;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+.contacts-section .container {
+   display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+ .contacts-block {
+   padding-left:0;
+   width:450px;
+ } 
 }
