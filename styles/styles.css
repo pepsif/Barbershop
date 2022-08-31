@@ -52,7 +52,7 @@ header {
 
 .main-navigation {
   width: 370px;
-  /*     padding:24px 20px; */
+  /* padding:24px 20px; */
 }
 
 .navigation-list {
@@ -149,7 +149,8 @@ header {
   /* height: 100vh; */
   display: flex;
   justify-content: center;
-  /*     align-items:center; */
+  /* align-items:
+  center; */
 }
 
 .advantages-cards-block {
@@ -158,7 +159,7 @@ header {
   /*     padding: 0 10px; */
   /*     margin:30px; */
   /*     align-items: flex-end; */
-  /*     padding-bottom: 200px; */
+  /* padding-bottom: 200px; */
   /*   justify-content:center; */
 }
 
@@ -893,9 +894,22 @@ footer {
 
 @media screen and (max-width:635px) {
  header .container, .header-inner {
-  max-width:640px;
+  width:640px;
+   justify-content:center;
  }
+.logo-container {
+/* display:flex; */
+/*   justify-content:center; */
+}
   
+ .advantages-cards-block {
+   margin:140px 0 150px 20px ;
+   
+ } 
+ .advantages-cards-block div:not(:first-child) {
+   display:none;
+  
+ } 
   .services .container {
     width:640px;
     padding:0px;
