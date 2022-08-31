@@ -44,7 +44,7 @@ header {
 
 .header-inner {
   display: flex;
-  /*     background-color: black; */
+  background-color: black;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -892,6 +892,10 @@ footer {
 /* -----ADAPTIVE---------- */
 
 @media screen and (max-width:635px) {
+ header .container, .header-inner {
+  max-width:640px;
+ }
+  
   .services .container {
     width:640px;
     padding:0px;
