@@ -144,19 +144,19 @@ header {
 
 /* -------MAIN--------------- */
 .advantages-block {
-  background: url('../images/logo.png')no-repeat 50% 2em;
+  background: url('../images/logo.png')no-repeat 50% 0%;
   background-size: 40%,100%;
   /* height: 100vh; */
-  display: flex;
-  justify-content: center;
+/*   display: block; */
+  /* justify-content: center; */
   /* align-items:
   center; */
 }
 
 .advantages-cards-block {
   display: flex;
-  margin: 30% 0 58px 0;
-  /*     padding: 0 10px; */
+  /* margin: 30% 0 58px 0; */
+      padding: 30% 0 58px 0;
   /*     margin:30px; */
   /*     align-items: flex-end; */
   /* padding-bottom: 200px; */
@@ -196,9 +196,9 @@ header {
 
 /* --------SERVICES-SECTION---------- */
 .services {
-  /*   display: flex; */
+/*   display: flex; */
   /*   background-color: #FBF7F4; */
-  justify-content: space-between;
+/*   justify-content: center; */
   margin-bottom: 41px;
 }
 
@@ -897,19 +897,24 @@ footer {
   width:640px;
    justify-content:center;
  }
-.logo-container {
-/* display:flex; */
-/*   justify-content:center; */
+.advantages-block .container {
+  /* display:flex; */
+  /* justify-content:
+  center; */
 }
   
  .advantages-cards-block {
-   margin:140px 0 150px 20px ;
+/*    margin:140px 0 150px 0px ; */
    
  } 
  .advantages-cards-block div:not(:first-child) {
    display:none;
   
  } 
+  .advantages-cards-block div:first-child {
+    height:250px;
+    margin:100px 20px;
+  }
   .services .container {
     width:640px;
     padding:0px;
