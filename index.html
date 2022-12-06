@@ -12,6 +12,8 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/adaptive.css">
+
     <title>Barbershop</title>
 </head>
 
@@ -20,36 +22,37 @@
 
     <!-- ---------HEADER------------->
     <header>
-        <div class="container">
-            <div class="header-inner">
-                <nav class="main-navigation">
-                    <ul class="navigation-list">
-                        <li class="navigation-item"><a href="#" class="navigation-link">Про нас</a></li>
-                        <li class="navigation-item"><a href="catalog.html" class="navigation-link">Каталог</a></li>
-                        <li class="navigation-item"><a href="#" class="navigation-link">Поширені запитання</a></li>
-                    </ul>
-                </nav>
+        <div class="container header-container">
 
-
-                <ul class="user-navigation">
-                    <li class="user-item">
-                        <a href="#" class="user-link"><img class="icons" src="icons/Search.svg" alt="user search"></a>
-
-                    </li>
-                    <li class="user-item">
-                        <a href="#" class="user-link user-basket-button"><img class="icons" src="icons/Union.svg"
-                                alt="user basket"></a>
-
-                    </li>
-                    <li class="user-item">
-                        <a href="#popup" class="user-link enter"><img class="icons icons-enter" src="icons/login.svg"
-                                alt="user enter"></a>
-
-                    </li>
+            <nav class="main-navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a href="#" class="navigation-link">Про нас</a></li>
+                    <li class="navigation-item"><a href="catalog.html" class="navigation-link">Каталог</a></li>
+                    <li class="navigation-item"><a href="#" class="navigation-link">Поширені запитання</a></li>
                 </ul>
+            </nav>
 
 
-            </div>
+            <ul class="user-navigation">
+                <li class="user-item">
+                    <a href="#" class="user-link"><img class="icons" src="icons/Search.svg" alt="user search"></a>
+
+                </li>
+                <li class="user-item">
+                    <a href="#" class="user-link user-basket-button"><img class="icons" src="icons/Union.svg"
+                            alt="user basket"></a>
+
+                </li>
+                <li class="user-item enter-block">
+                    <a href="#popup" class="user-link"><img class="icons icons-enter" src="icons/login.svg"
+                            alt="user enter"></a>
+                            <span class="enter">вхід</span>
+
+                </li>
+            </ul>
+
+
+
         </div>
         <!-- ------POPUPS--------------- -->
 
@@ -151,12 +154,12 @@
             <div class="popular-services">
                 <h2 class="popular-services-title title">Поширені послуги</h2>
                 <ul class="services-list">
-                    <li class="services-item">Стрижка машинкой<b class="services-price">800 ₽</b></li>
-                    <li class="services-item">Стрижка усов<b class="services-price">1200 ₽</b></li>
-                    <li class="services-item">Груминг<b class="services-price">400 ₽</b></li>
-                    <li class="services-item">Комплексная стрижка<b class="services-price">2300 ₽</b></li>
+                    <li class="services-item">Стрижка машинкой<b class="services-price">400 Грн</b></li>
+                    <li class="services-item">Стрижка усов<b class="services-price">600 Грн</b></li>
+                    <li class="services-item">Груминг<b class="services-price">200 Грн</b></li>
+                    <li class="services-item">Комплексна стрижка<b class="services-price">1300 Грн</b></li>
                     <li class="services-button-item">
-                        <a href="#" class="services-button">Посмотреть все</a>
+                        <a href="#" class="services-button">Подивитись все</a>
                     </li>
                 </ul>
             </div>
@@ -179,15 +182,15 @@
         <div class="container ">
             <div class="contacts-block">
                 <h2 class="contacts-title">Контакты</h2>
-                <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
-                <p class="contacts-info">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <p class="contacts-phone">+7 800 555-86-28</p>
-                <h3 class="contacts-time">Время работы</h3>
-                <p class="contacts-calendar">пн—пт: с 10:00 до 22:00</p>
-                <p class="contacts-calendar">сб—вс: с 10:00 до 19:00</p>
+                <h3 class="contacts-subtitle">Барбершоп «Бородянский»</h3>
+                <p class="contacts-info">Київ, вул.Сагайдачного буд.5</p>
+                <p class="contacts-phone">+3 800 555-86-28</p>
+                <h3 class="contacts-time">Години праці</h3>
+                <p class="contacts-calendar">пн—пт: з 10:00 до 22:00</p>
+                <p class="contacts-calendar">сб—нд: з 10:00 до 19:00</p>
 
-                <button class="contacts-button road-button">Как проехать</button>
-                <button class="contacts-button callback-button">Обратная связь</button>
+                <button class="contacts-button road-button">Як проїхати</button>
+                <button class="contacts-button callback-button">зв'язок</button>
             </div>
 
             <!-- -----FORM------------- -->

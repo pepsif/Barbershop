@@ -1,53 +1,34 @@
 body {
-    max-width: 1020px;
+   
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
-    margin: 0 auto;
+  
     background-image: url('../images/main-background.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    position: relative;
+
 }
 
 .container {
     max-width: 940px;
     margin: 0 auto;
-    /*   padding:0 20px; */
-}
+   }
 
-input {
-    border: 2px solid black;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    padding: 8px 0 8px 15px;
-}
+
 
 /* --------HEADER---------------- */
 header {
-    /*     display: flex; */
-    /*     justify-content: space-between; */
-    /*     align-items: center; */
-    /*     background-color: black; */
-    /*     max-height:70px; */
-    /*         display: flex;
-    justify-content: space-between; */
     background-color: black;
-    /*         padding: 24px 0;
-     padding:24px 0; 
-       max-height: 70px; 
-        overflow:hidden; */
 }
 
-.header-inner {
+.header-container {
     display: flex;
     background-color: black;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+ 
+  
 }
 
 .main-navigation {
@@ -89,22 +70,22 @@ header {
 
 /* ----USER-NAVIGATION------------ */
 .icons {
-    /*     height: 16px; */
-    /*     color:white; */
-    /*     filter:invert; */
+    padding:24px 20px 24px 20px;
 }
 
 .user-navigation {
-    width: 210px;
+    /* width: 210px; */
     display: flex;
-    justify-content: right;
+    /* justify-content: space-around; */
 }
 
 .user-item {
+    display: flex;
+    align-items: center;
 }
 
 .user-link {
-    padding: 27px 20px;
+    /* padding: 27px 20px; */
     display: block;
 }
 
@@ -121,26 +102,20 @@ header {
     outline: 4px solid #E7E7E7;
     outline-offset: -5px;
 }
-
-.enter {
-    padding-right: 60px;
+.enter-block {
     display: flex;
-    position: relative;
-    /*     font-size:11px; */
+    align-items: center;
+cursor:pointer;
+}
+.enter-block:hover {
+    background-color:#595959;
+}
+.enter {
+    margin-left:-9px;
+    padding-right:20px;
+
 }
 
-.enter:after {
-    content: 'вхід';
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    color: white;
-    /*     font-family: 'PT Sans Narrow'; */
-    font-style: normal;
-    font-weight: 700;
-    /* font-size: 16px; */
-    line-height: 140%;
-}
 
 /* -------MAIN--------------- */
 .advantages-block {
@@ -196,9 +171,6 @@ header {
 
 /* --------SERVICES-SECTION---------- */
 .services {
-    /*   display: flex; */
-    /*   background-color: #FBF7F4; */
-    /*   justify-content: center; */
     margin-bottom: 41px;
 }
 
@@ -332,10 +304,7 @@ header {
 }
 
 .contacts-block {
-    /*   border-right: 1px dashed #595959; */
-    /*   margin-right: px; */
-    /*   background-image: url('../images/services-ornament.png'); */
-    padding: 40px 0 0 40px;
+   padding:40px;
 }
 
 .contacts-title {
@@ -475,11 +444,19 @@ header {
     color: #595959;
     margin-bottom: 24px;
 }
-
+input {
+    border: 2px solid black;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 8px 0 8px 15px;
+}
 /* ----DATA-------------- */
 .data-block {
     display: flex;
-    /*     flex-wrap:wrap; */
+    justify-content:center;
 }
 
 .data-label-block {
@@ -526,6 +503,7 @@ header {
 .name-label-block {
     display: flex;
     flex-direction: column;
+    align-items:center;
 }
 
 .name-label-block label {
@@ -539,7 +517,7 @@ header {
 }
 
 .name-input {
-    max-width: 430px;
+    width: 90%;
     margin-bottom: 19px;
 }
 
@@ -932,8 +910,8 @@ footer {
     }
 
     .contacts-block {
-        padding-left: 0;
-        width: 450px;
+/*         padding-left: 0; */
+/*         width: 450px; */
     }
 
     footer .container {

@@ -1,3 +1,8 @@
+.header-inner {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
 .navigation-item {
   position: relative;
 }
@@ -22,6 +27,7 @@
 
 .catalog-main {
   background: url('../images/services-ornament.png');
+  background-size:cover;
 }
 
 .catalog-title {
@@ -84,8 +90,9 @@
 /* ----CATALOG-AND-FILTERS--BlOCK--- */
 .filters-catalog-block {
   display: flex;
+  /* flex-wrap:wrap; */
   justify-content: space-between;
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 
 /* ---LEFT_SIDE_BLOCK---------- */
@@ -95,6 +102,7 @@
 
 /* ---RIGHT_SIDE_BLOCK---------- */
 .right-side-block {
+  
 }
 
 /* ----PRICE_FORM---------- */
@@ -329,7 +337,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*   width: 700px; */
+  /* max-width:100%; */
   background-color: #FFFFFF;
   margin-bottom: 6px;
 }
@@ -368,16 +376,16 @@
 
 /* ----CARDS--BLOCK-------- */
 .catalog-cards-block {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 700px;
+   /* min-width: 200px; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
 }
 
 .catalog-card {
   background-color: #FFFFFF;
-  width: 220px;
-  height: 401px;
+  width: 33%;
+/*   height: 20%; */
   position: relative;
   margin: 10px 0;
 }
@@ -433,7 +441,7 @@
 /* ----PAGINATION--BLOCK------ */
 .pagination-block {
   background-color: white;
-  width: 700px;
+  max-width: 700px;
   height: 76px;
   margin: 24px 0 0 0;
   display: flex;
