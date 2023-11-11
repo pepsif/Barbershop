@@ -2,355 +2,339 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-        href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+            href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Sans:wght@400;700&display=swap"
+            rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/adaptive.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="stylesheet" href="styles/catalog.css">
     <title>Barbershop</title>
 </head>
 
 <body>
 
-
-    <!-- ---------HEADER------------- -->
-    <header>
-        <div class="container">
-            <div class="header-inner">
-                <a class="catalog-logo" href="index.html"><img src="icons/catalog logo.png" alt="logo"></a>
-
+<!-- ---------HEADER------------- -->
+<header>
+    <div class="container">
+        <div class="header-inner">
+            <a class="catalog-logo" href="index.html"><img src="icons/catalog logo.png" alt="logo"></a>
 
 
-                <nav class="main-navigation">
-                    <ul class="navigation-list">
-                        <li class="navigation-item"><a href="#" class="navigation-link">Про нас</a></li>
-                        <li class="navigation-item"><a href="#" class="navigation-link current-page">Каталог</a></li>
-                        <li class="navigation-item"><a href="#" class="navigation-link">Поширені запитання</a></li>
-                    </ul>
-                </nav>
-
-
-                <ul class="user-navigation">
-                    <li class="user-item">
-                        <a href="#" class="user-link"><img class="icons" src="icons/Search.svg" alt="user search"></a>
-
-                    </li>
-                    <li class="user-item">
-                        <a href="#" class="user-link user-basket-button"><img class="icons" src="icons/Union.svg"
-                                alt="user basket"></a>
-
-                    </li>
-                    <li class="user-item">
-                        <a href="#popup" class="user-link enter"><img class="icons icons-enter" src="icons/login.svg"
-                                alt="user enter"></a>
-
-                    </li>
+            <nav class="main-navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a href="#" class="navigation-link">Про нас</a></li>
+                    <li class="navigation-item"><a href="#" class="navigation-link current-page">Каталог</a></li>
+                    <li class="navigation-item"><a href="#" class="navigation-link">Поширені запитання</a></li>
                 </ul>
+            </nav>
 
 
-            </div>
+            <ul class="user-navigation">
+                <li class="user-item">
+                    <a href="#" class="user-link"><img class="icons" src="icons/Search.svg" alt="user search"></a>
+
+                </li>
+                <li class="user-item">
+                    <a href="#" class="user-link user-basket-button"><img class="icons" src="icons/Union.svg"
+                                                                          alt="user basket"></a>
+
+                </li>
+                <li class="user-item">
+                    <a href="#popup" class="user-link enter"><img class="icons icons-enter" src="icons/login.svg"
+                                                                  alt="user enter"></a>
+
+                </li>
+            </ul>
+
+
         </div>
-        <!-- ------POPUPS--------------- -->
+    </div>
+    <!-- ------POPUPS--------------- -->
 
-        <!-- ---BASKET--POPUP----------- -->
-        <div class="popup-basket">
-            <div class="popup-basket-body">
-                <div class="popup-basket-content">
-                    <h2 class="popup-basket-title">Корзина</h2>
-                    <ul class="popup-basket-list">
+    <!-- ---BASKET--POPUP----------- -->
+    <div class="popup-basket">
+        <div class="popup-basket-body">
+            <div class="popup-basket-content">
+                <h2 class="popup-basket-title">Корзина</h2>
+                <ul class="popup-basket-list">
 
-                        <li class="popup-basket-list-item">
-                            <div class="popup-basket-services-block">
-                                <p class="popup-basket-list-services">Стрижка машинкой</p>
-                                <p class="popup-basket-list-services-price">800 ₽</p>
-                            </div>
-                            <img class="popup-basket-icons" src="icons/basket-icons.png">
-                        </li>
-
-                        <li class="popup-basket-list-item">
-                            <div class="popup-basket-services-block">
-                                <p class="popup-basket-list-services">Стрижка усов</p>
-                                <p class="popup-basket-list-services-price">1200 ₽</p>
-                            </div>
-                            <img class="popup-basket-icons" src="icons/basket-icons.png">
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- ----USER--ENTER--POPUP---------- -->
-
-        <div id="popup" class="popup">
-            <div class="popup_body">
-                <div class="popup-content">
-                    <a class="popup-close" href="#">X</a>
-                    <h2 class="popup-title">Личный кабинет</h2>
-                    <form class="popup-form" action="">
-                        <input class="popup-input-login" type="text" placeholder="Логин">
-                        <input class="popup-input-password" type="password" placeholder="Пароль">
-                        <div class="popup-forgot-password-block">
-                            <label for=""><input class="popup-checkbox" type="checkbox" name="" id="">Запомнить
-                                меня</label>
-                            <a class="forgot-password-link" href="#">Забыл пароль</a>
-
+                    <li class="popup-basket-list-item">
+                        <div class="popup-basket-services-block">
+                            <p class="popup-basket-list-services">Стрижка машинкой</p>
+                            <p class="popup-basket-list-services-price">800 ₽</p>
                         </div>
-                        <a href="#" class="popup-button">войти</a>
-                        <a href="#" class="popup-button-registration">Регистрация</a>
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </header>
-    <!-- -------CATALOG------------------- -->
-    <section class="catalog-main">
-        <div class="container">
-
-            <h1 class="catalog-title">Каталог</h1>
-            <div class="breadcrumbs-block">
-                <ul class="breadcrumbs-list">
-                    <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link" href="index.html">Главная</a>
+                        <img class="popup-basket-icons" src="icons/basket-icons.png">
                     </li>
-                    <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link" href="#">Каталог</a>
+
+                    <li class="popup-basket-list-item">
+                        <div class="popup-basket-services-block">
+                            <p class="popup-basket-list-services">Стрижка усов</p>
+                            <p class="popup-basket-list-services-price">1200 ₽</p>
+                        </div>
+                        <img class="popup-basket-icons" src="icons/basket-icons.png">
                     </li>
+
                 </ul>
             </div>
-            <!----FILTERS-AND-CATALOG-BLOCK--------------->
+        </div>
+    </div>
 
-            <div class="filters-catalog-block">
 
-                <div class="left-side-block">
+    <!-- ----USER--ENTER--POPUP---------- -->
 
-                    <form class="price-form" method="post" action="pepsi_fack@ukr.net">
-                        <fieldset class="price-block">
-                            <legend class="price-title">Цена</legend>
-                            <div class="price-input-block">
-                                <input class="price-input" type="range">
-                                <div class="price-range-block">
-                                    <span>от 50 ₽</span>
-                                    <span>до 1500 ₽</span>
-                                </div>
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div class="popup-content">
+                <a class="popup-close" href="#">X</a>
+                <h2 class="popup-title">Личный кабинет</h2>
+                <form class="popup-form" action="">
+                    <input class="popup-input-login" type="text" placeholder="Логин">
+                    <input class="popup-input-password" type="password" placeholder="Пароль">
+                    <div class="popup-forgot-password-block">
+                        <label for=""><input class="popup-checkbox" type="checkbox" name="" id="">Запомнить
+                            меня</label>
+                        <a class="forgot-password-link" href="#">Забыл пароль</a>
+
+                    </div>
+                    <a href="#" class="popup-button">войти</a>
+                    <a href="#" class="popup-button-registration">Регистрация</a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</header>
+<!-- -------CATALOG------------------- -->
+<section class="catalog-main">
+    <div class="container">
+
+        <h1 class="catalog-title">Каталог</h1>
+        <div class="breadcrumbs-block">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="#">Каталог</a>
+                </li>
+            </ul>
+        </div>
+        <!----FILTERS-AND-CATALOG-BLOCK--------------->
+
+        <div class="filters-catalog-block">
+
+            <div class="left-side-block">
+
+                <form class="price-form" method="post" action="pepsi_fack@ukr.net">
+                    <fieldset class="price-block">
+                        <legend class="price-title">Цена</legend>
+                        <div class="price-input-block">
+                            <input class="price-input" type="range">
+                            <div class="price-range-block">
+                                <span>от 50 ₽</span>
+                                <span>до 1500 ₽</span>
                             </div>
-                        </fieldset>
-                        <fieldset class="catalog-filter-group">
-                            <legend class="catalog-filter-title">Производители</legend>
+                        </div>
+                    </fieldset>
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Производители</legend>
 
-                            <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="bed-head">
-                            <label class="checkbox-block" for="bed-head">Bed Head for Men</label>
+                        <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="bed-head">
+                        <label class="checkbox-block" for="bed-head">Bed Head for Men</label>
 
-                            <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="home-deep"
-                                checked>
-                            <label class="checkbox-block" for="home-deep">Homme Cleansing Cool</label>
+                        <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="home-deep"
+                               checked>
+                        <label class="checkbox-block" for="home-deep">Homme Cleansing Cool</label>
 
-                            <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="so-intense" checked>
-                            <label class="checkbox-block" for="so-intense">So Intense</label>
+                        <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="so-intense"
+                               checked>
+                        <label class="checkbox-block" for="so-intense">So Intense</label>
 
-                            <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="sprekenhus">
-                            <label class="checkbox-block" for="sprekenhus">Sprekenhus</label>
+                        <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="sprekenhus">
+                        <label class="checkbox-block" for="sprekenhus">Sprekenhus</label>
 
-                            <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="firm-store">
-                            <label class="checkbox-block" for="firm-store">Firm Storе</label>
+                        <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="firm-store">
+                        <label class="checkbox-block" for="firm-store">Firm Storе</label>
 
-                            <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="winter-body" checked>
-                            <label class="checkbox-block" for="winter-body">Winter Body</label>
+                        <input class="filters-checkbox custom-checkbox" type="checkbox" name="" id="winter-body"
+                               checked>
+                        <label class="checkbox-block" for="winter-body">Winter Body</label>
 
-                        </fieldset>
-
-
-
-
-
-
-                        <fieldset class="catalog-filter-group">
-                            <legend class="catalog-filter-title">Группы товаров</legend>
-                             
-                            <input class="filters-checkbox custom-radio" type="radio" name="" id="shaving-accessories">
-                             <label class="radio-block" for="shaving-accessories">Бритвенные принадлежности</label>       
-                             
-                             <input class="filters-checkbox custom-radio" type="radio" name="" id="means-for-care" checked>
-                             <label class="radio-block" for="means-for-care"> Средства для ухода </label>
-                                
-                            <input class="filters-checkbox custom-radio" type="radio" name="" id="accesories">
-                            <label class="radio-block" for="accesories">Аксессуары</label>
-                               
-                                   
-                           
-                            
-                                
-                           
+                    </fieldset>
 
 
-                        </fieldset>
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Группы товаров</legend>
 
-                        <button class="filters-button" type="submit">Показать</button>
-                    </form>
+                        <input class="filters-checkbox custom-radio" type="radio" name="" id="shaving-accessories">
+                        <label class="radio-block" for="shaving-accessories">Бритвенные принадлежности</label>
+
+                        <input class="filters-checkbox custom-radio" type="radio" name="" id="means-for-care"
+                               checked>
+                        <label class="radio-block" for="means-for-care"> Средства для ухода </label>
+
+                        <input class="filters-checkbox custom-radio" type="radio" name="" id="accesories">
+                        <label class="radio-block" for="accesories">Аксессуары</label>
 
 
+                    </fieldset>
+
+                    <button class="filters-button" type="submit">Показать</button>
+                </form>
+
+
+            </div>
+
+            <div class="right-side-block">
+                <div class="catalog-sort-block">
+                    <select class="catalog-select">
+                        <option class="select-input">Сначала дорогие</option>
+                        <option class="select-input">Сначала недорогие</option>
+                    </select>
+                    <div class="select-sort-block">
+                        <img src="icons/sort.png" class="sort-icon-list" alt="sort icon">
+                        <img src="icons/sort2.png" class="sort-icon-cards" alt="sort icon">
+
+                    </div>
                 </div>
 
-                <div class="right-side-block">
-                    <div class="catalog-sort-block">
-                        <select class="catalog-select">
-                            <option class="select-input">Сначала дорогие</option>
-                            <option class="select-input">Сначала недорогие</option>
-                        </select>
-                        <div class="select-sort-block">
-                            <img src="icons/sort.png" class="sort-icon-list" alt="sort icon">
-                            <img src="icons/sort2.png" class="sort-icon-cards" alt="sort icon">
+                <!-- ---CARDS_BLOCK-------------- -->
+                <section class="catalog-cards-block">
+                    <div class="catalog-card">
+                        <img class="catalog-card-image" src="./images/catalog/1@2x 1.png" alt="bottle beer">
+                        <p class="catalog-card-info">Шампунь для мужчин <br>Brews Daily</p>
+                        <p class="catalog-card-price">744 ₽</p>
+                        <button class="catalog-buy-button">Купить</button>
 
-                        </div>
+                    </div>
+                    <div class="catalog-card">
+                        <img class="catalog-card-image" src="./images/catalog/1@2x 1-2.png" alt="bottle beer">
+                        <p class="catalog-card-info">Шампунь для мужчин <br>Brews Daily</p>
+                        <p class="catalog-card-price">744 ₽</p>
+                        <button class="catalog-buy-button">Купить</button>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img class="catalog-card-image" src="./images/catalog/1@2x 1-1.png" alt="bottle beer">
+                        <p class="catalog-card-info">Шампунь для мужчин <br>Brews Daily</p>
+                        <p class="catalog-card-price">744 ₽</p>
+                        <button class="catalog-buy-button">Купить</button>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img class="catalog-card-image" src="./images/catalog/1@2x 1-3.png" alt="bottle beer">
+                        <p class="catalog-card-info">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</p>
+                        <p class="catalog-card-price">173 ₽</p>
+                        <button class="catalog-buy-button">Купить</button>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img class="catalog-card-image" src="./images/catalog/1@2x 1-4.png" alt="bottle beer">
+                        <p class="catalog-card-info">Шампунь Amplifier Thickening</p>
+                        <p class="catalog-card-price">441 ₽</p>
+                        <button class="catalog-buy-button">Купить</button>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img class="catalog-card-image" src="./images/catalog/1@2x 1-5.png" alt="bottle beer">
+                        <p class="catalog-card-info">American Crew шампунь Anti-Dandruff</p>
+                        <p class="catalog-card-price">904 ₽</p>
+                        <button class="catalog-buy-button">Купить</button>
+
                     </div>
 
-                    <!-- ---CARDS_BLOCK-------------- -->
-                    <section class="catalog-cards-block">
-                        <div class="catalog-card">
-                            <img class="catalog-card-image" src="./images/catalog/1@2x 1.png" alt="bottle beer">
-                            <p class="catalog-card-info">Шампунь для мужчин <br>Brews Daily</p>
-                            <p class="catalog-card-price">744 ₽</p>
-                            <button class="catalog-buy-button">Купить</button>
 
-                        </div>
-                        <div class="catalog-card">
-                            <img class="catalog-card-image" src="./images/catalog/1@2x 1-2.png" alt="bottle beer">
-                            <p class="catalog-card-info">Шампунь для мужчин <br>Brews Daily</p>
-                            <p class="catalog-card-price">744 ₽</p>
-                            <button class="catalog-buy-button">Купить</button>
+                </section>
+                <!-- -------PAGINATION--BLOCK------------ -->
 
-                        </div>
-                        <div class="catalog-card">
-                            <img class="catalog-card-image" src="./images/catalog/1@2x 1-1.png" alt="bottle beer">
-                            <p class="catalog-card-info">Шампунь для мужчин <br>Brews Daily</p>
-                            <p class="catalog-card-price">744 ₽</p>
-                            <button class="catalog-buy-button">Купить</button>
+                <section class="pagination-block">
 
-                        </div>
-                        <div class="catalog-card">
-                            <img class="catalog-card-image" src="./images/catalog/1@2x 1-3.png" alt="bottle beer">
-                            <p class="catalog-card-info">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</p>
-                            <p class="catalog-card-price">173 ₽</p>
-                            <button class="catalog-buy-button">Купить</button>
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link pagination-prev">prev</a>
+                        </li>
 
-                        </div>
-                        <div class="catalog-card">
-                            <img class="catalog-card-image" src="./images/catalog/1@2x 1-4.png" alt="bottle beer">
-                            <p class="catalog-card-info">Шампунь Amplifier Thickening</p>
-                            <p class="catalog-card-price">441 ₽</p>
-                            <button class="catalog-buy-button">Купить</button>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link current-pagination">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link">5</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-link pagination-next">next</a>
+                        </li>
 
-                        </div>
-                        <div class="catalog-card">
-                            <img class="catalog-card-image" src="./images/catalog/1@2x 1-5.png" alt="bottle beer">
-                            <p class="catalog-card-info">American Crew шампунь Anti-Dandruff</p>
-                            <p class="catalog-card-price">904 ₽</p>
-                            <button class="catalog-buy-button">Купить</button>
+                    </ul>
 
-                        </div>
+                    <button class="pagination-button">Показать ещё</button>
 
-                        <!-- -------PAGINATION--BLOCK------------ -->
-
-                        <section class="pagination-block">
-
-                            <ul class="pagination-list">
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link pagination-prev">prev</a>
-                                </li>
-
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link current-pagination">1</a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link">2</a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link">3</a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link">4</a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link">5</a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="#" class="pagination-link pagination-next">next</a>
-                                </li>
-
-                            </ul>
-
-                            <button class="pagination-button">Показать ещё</button>
-
-                        </section>
-
-
-
-
-                    </section>
-
-                </div>
+                </section>
 
 
             </div>
 
 
         </div>
-    </section>
 
 
+    </div>
+</section>
 
 
+<!-- ---------FOOTER------------------ -->
 
-    <!-- ---------FOOTER------------------ -->
+<footer>
+    <div class="container">
 
-    <footer>
-        <div class="container">
+        <div class="footer-inner">
 
-            <div class="footer-inner">
+            <div class="logo-block">
+                <a href="#" class="footer-logo"><img src="icons/footer-logo.png" alt=""></a>
+                <p class="logo-info">Санкт-Петербург, набережная
+                    реки Карповки, 5, литера П.</p>
+                <p class="logo-phone">+7 800 555-86-28</p>
+                <a href="" class="logo-link">Как нас найти?</a>
+            </div>
 
-                <div class="logo-block">
-                    <a href="#" class="footer-logo"><img src="icons/footer-logo.png" alt=""></a>
-                    <p class="logo-info">Санкт-Петербург, набережная
-                        реки Карповки, 5, литера П.</p>
-                    <p class="logo-phone">+7 800 555-86-28</p>
-                    <a href="" class="logo-link">Как нас найти?</a>
-                </div>
-
-                <div class="search-block">
-                    <h2 class="search-title">Получайте лучшие предложения</h2>
-                    <div class="search-input-block">
-                        <input class="search-field" type="text" placeholder="question@htmlacademy.ru">
-                        <img class="search-right" src="icons/stroke right.png" alt="icon stroke right">
-                    </div>
-
-                </div>
-
-                <div class="friendship-block">
-                    <h2 class="friendship-title">Давайте дружить</h2>
-                    <div class="social-block">
-                        <img class="social-icons" src="icons/twitter.svg" alt="">
-                        <img class="social-icons" src="icons/Vector.svg" alt="">
-                        <img class="social-icons" src="icons/Union3.svg" alt="">
-
-                    </div>
+            <div class="search-block">
+                <h2 class="search-title">Получайте лучшие предложения</h2>
+                <div class="search-input-block">
+                    <input class="search-field" type="text" placeholder="question@htmlacademy.ru">
+                    <img class="search-right" src="icons/stroke right.png" alt="icon stroke right">
                 </div>
 
             </div>
-        </div>
 
-    </footer>
+            <div class="friendship-block">
+                <h2 class="friendship-title">Давайте дружить</h2>
+                <div class="social-block">
+                    <img class="social-icons" src="icons/twitter.svg" alt="">
+                    <img class="social-icons" src="icons/Vector.svg" alt="">
+                    <img class="social-icons" src="icons/Union3.svg" alt="">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
 
 </body>
 
