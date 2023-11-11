@@ -455,10 +455,22 @@ input {
     line-height: 150%;
     padding: 8px 0 8px 15px;
 }
+<<<<<<< HEAD
+=======
+input {
+    border: 2px solid black;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 8px 0 8px 15px;
+}
+>>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
 /* ----DATA-------------- */
 .data-block {
     display: flex;
-    /*     flex-wrap:wrap; */
+    justify-content:center;
 }
 
 .data-label-block {
@@ -505,6 +517,7 @@ input {
 .name-label-block {
     display: flex;
     flex-direction: column;
+    align-items:center;
 }
 
 .name-label-block label {
@@ -518,7 +531,7 @@ input {
 }
 
 .name-input {
-    max-width: 430px;
+    width: 90%;
     margin-bottom: 19px;
 }
 

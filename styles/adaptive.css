@@ -53,12 +53,18 @@
 
     .contacts-block {
 /*         padding-left: 0; */
+<<<<<<< HEAD
 /*         width: 450px; */
     }
 
     .form-info {
         max-width:80%;
     }
+=======
+        width: 450px;
+    }
+
+>>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
     footer .container {
       
     }
@@ -91,7 +97,12 @@
     }
     .form {
         width:100%;
+<<<<<<< HEAD
 /*         padding:0; */
+=======
+        padding:0;
+        text-align:center;
+>>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
     }
     .data-input {
         width:100px;
@@ -101,6 +112,7 @@
        width:60px;
         padding:5px 5px; 
     }
+<<<<<<< HEAD
     .phone-input {
         width: 100%;
       padding:5px 5px; 
@@ -109,4 +121,6 @@
         max-width: 93%;
         padding:5px 5px; 
     }
+=======
+>>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
 }
