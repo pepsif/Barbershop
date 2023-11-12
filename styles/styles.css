@@ -414,7 +414,7 @@ cursor:pointer;
 /* -----FORM------------- */
 .form {
     background-image: url('../images/services-ornament.png');
-    padding: 40px 0 0 40px;
+    padding: 40px 40px 0 40px;
 }
 
 .form label {
@@ -455,8 +455,7 @@ input {
     line-height: 150%;
     padding: 8px 0 8px 15px;
 }
-<<<<<<< HEAD
-=======
+
 input {
     border: 2px solid black;
     font-family: 'PT Sans';
@@ -466,7 +465,7 @@ input {
     line-height: 150%;
     padding: 8px 0 8px 15px;
 }
->>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
+
 /* ----DATA-------------- */
 .data-block {
     display: flex;

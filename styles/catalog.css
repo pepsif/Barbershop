@@ -90,13 +90,11 @@
 /* ----CATALOG-AND-FILTERS--BlOCK--- */
 .filters-catalog-block {
   display: flex;
-<<<<<<< HEAD
-  
-  /* justify-content: space-between; */
-=======
+
+    /* justify-content: space-between; */
   /* flex-wrap:wrap; */
-  justify-content: space-between;
->>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
+  /* justify-content: space-between; */
+
   /* min-height: 500px; */
 }
 
@@ -375,6 +373,7 @@
 
 .sort-icon-cards {
   padding: 14px 20px;
+  margin: 16px;
   background-color: black;
   cursor: pointer;
 }
@@ -384,18 +383,16 @@
    /* min-width: 200px; */
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 .catalog-card {
   background-color: #FFFFFF;
-<<<<<<< HEAD
+
   width: 220px;
   height: 400px;
-=======
-  width: 33%;
-/*   height: 20%; */
->>>>>>> d97afd84bb853df31d3943501fb9762e2b763334
+
+
   position: relative;
   margin: 10px 0;
 }
