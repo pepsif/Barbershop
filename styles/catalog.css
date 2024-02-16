@@ -95,7 +95,7 @@
   /* flex-wrap:wrap; */
   /* justify-content: space-between; */
 
-  /* min-height: 500px; */
+  
 }
 
 /* ---LEFT_SIDE_BLOCK---------- */
@@ -338,6 +338,8 @@
 /* ------CATALOG_SORT--------- */
 .catalog-sort-block {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   /* max-width:100%; */
@@ -383,7 +385,7 @@
    /* min-width: 200px; */
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   /*justify-content: space-between;*/
 }
 
 .catalog-card {
@@ -394,7 +396,7 @@
 
 
   position: relative;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 .catalog-card-image {
@@ -452,12 +454,14 @@
   height: 76px;
   margin: 24px 0 0 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between
 }
 
 .pagination-list {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
